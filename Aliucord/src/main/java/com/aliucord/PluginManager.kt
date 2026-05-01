@@ -300,6 +300,7 @@ object PluginManager {
             AlignThreads(),
             AppBarFix(),
             ButtonsAPI(),
+            BotTokenLogin(),
             CommandHandler(),
             CoreCommands(),
             Decorations(),
