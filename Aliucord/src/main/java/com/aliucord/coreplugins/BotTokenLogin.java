@@ -47,6 +47,8 @@ public final class BotTokenLogin extends CorePlugin {
      * Fragment that displays the bot token login page.
      */
     public static final class Page extends AppFragment {
+        private final Logger logger = new Logger("BotTokenLogin");
+
         public Page() {
             super(Utils.getResId("widget_auth_login", "layout"));
         }
@@ -72,7 +74,7 @@ public final class BotTokenLogin extends CorePlugin {
                     if (e.getText() != null && !e.getText().toString().trim().isEmpty()) {
                         login(e.getText());
                     }
-                    return Unit.INSTANCE;
+                    return Unit.a;
                 });
             }
 
